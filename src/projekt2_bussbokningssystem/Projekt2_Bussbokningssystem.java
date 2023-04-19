@@ -87,7 +87,7 @@ public class Projekt2_Bussbokningssystem {
                     System.out.println("Du måste skriva in ett födelsedatum med formatet ÅÅÅÅMMDD. Använd siffror. Försök igen: "); //säger till ifall användaren skriver ett otillåtet tal och låter användaren försöka igen tills det blir rätt
                     tangentbord.next();
                 }
-            } else if (sittplatser[20] != 0) { //Om for-loopen har gått igenom hela fältet och det sista elementet inte är 0 är alla platser uppbokade
+            } else if (i == 20 && sittplatser[i] != 0) { //Om for-loopen har gått igenom hela fältet och det sista elementet inte är 0 är alla platser uppbokade
                 System.out.println("Alla platser är uppbokade"); //skrivs ut här
                 break;
             }
